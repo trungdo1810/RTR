@@ -2,13 +2,13 @@
 
 ### *Thực tập sinh: Đỗ Thành Trung*
 
-**1. Drone motor and ESC**
-    **1.1. Select motor**  
-    Things to consider when choosing drone motors:  
-    1. Weight of your drone  
-    2. Efficiency  
-    3. Power  
-    4. Torque
+### **1. Drone motor and ESC**  
+**1.1. Select motor**  
+Things to consider when choosing drone motors:  
+1. Weight of your drone  
+2. Efficiency  
+3. Power  
+4. Torque
 
 Types of motors:
 There are 2 types of motors used in drones: brushed and brushless motors.
@@ -41,7 +41,7 @@ The battery supplies direct current, while the brushless motor accepts three-pha
 <img src = 'https://i.dronemanya.com/%D1%81%D1%85%D0%B5%D0%BC%D0%B0-%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%D0%BE%D0%B2-%D0%BD%D0%B0%D0%BF%D1%80%D1%8F%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BA-%D0%91%D0%9A-%D0%BC%D0%BE%D1%82%D0%BE%D1%80%D0%B0%D0%BC-a932f.jpeg' > 
 </div>
 
-**2. ESC Protocols:** 
+### **2. ESC Protocols:**  
       
 ESC Protocols is the “language” that the flight controllers and ESC use to communicate, one of the most basic task is to tell how fast the motor should be spinning.
 <br/>The Oneshot, Multishot and Dshot are the ESC calibration protocols.This protocol allows connecting Electronic speed controllers (ESC) to flight controller.  
@@ -53,7 +53,7 @@ If pulse length is 1ms then STOP and when pulse length is 2ms then FULL POWER.
 The maximum frequency: 500Hz.  
 The signal delay is 2ms.
 
-<p align = 'center'> Problem with PWM</p> 
+<p align = 'center'> <b>Problem with PWM </b></p> 
 
 - Unsynced output  
 - Limited updated rate (frequency)  
@@ -79,11 +79,11 @@ The Dshot is itself a digital signal so it’s exciting to know that ESC calibra
 
 There are 4 different Dshot protocol types::
 1. DShot1200 ESC - 1200Kbits/Sec.  
-2. DShot600 ESC – 600Kbits/Sec.  
-3. DShot300 ESC – 300Kbits/Sec.  
-4. DShot150 ESC – 150Kbits/Sec.    
+2. DShot600 ESC - 600Kbits/Sec.  
+3. DShot300 ESC - 300Kbits/Sec.  
+4. DShot150 ESC - 150Kbits/Sec.    
 
 ![Speed Comparison](https://oscarliang.com/ctt/uploads/2016/11/esc-protocol-speed-comparison-hz.jpg)
 
-**3. PID control**
+### **3. PID control**
 
