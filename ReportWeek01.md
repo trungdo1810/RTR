@@ -74,9 +74,10 @@ Oneshot42 is 3 times faster than Oneshot125 with a maximum frequency of 12 kHz, 
 This is the fastest ESC protocol among all the above with a maximum frequency of 32 kHz. It is 10 times faster than Oneshot125. This is not a widely supported protocol because of a limited number of Multishot ESCs..
 
 <br/>**Dshot (Digitalshot)**  
-Standard PWM, Oneshot125, Oneshot42, and Multishot these are all analog signals. They all rely on the length of the electrical pulse to determine the value being sent.
+Standard PWM, Oneshot125, Oneshot42, and Multishot these are all analog signals. They all rely on the length of the electrical pulse to determine the value being sent.  
 
 The Dshot is itself a digital signal so it’s exciting to know that ESC calibration will no longer be necessary. Because of the nature of the digital signal, which is one’s and zero’s, it will also be much more resistant to electrical noise.  
+
 A DShot data packet consists of a total of 16 bits: 11 bits for throttle value (211 = 2048 steps), 1 bit for telemetry request and 4 bit for CRC checksum (cyclic redundancy check).
 
 There are 4 different Dshot protocol types:
