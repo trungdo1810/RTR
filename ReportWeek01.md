@@ -4,11 +4,11 @@
 
 1. Drone motor and ESC  
     1.1. Select motor  
-    Things to consider when choosing drone motors:  
-        1. Weight of your drone  
-        2. Efficiency  
-        3. Power  
-        4. Torque
+    Things to consider when choosing drone motors:   
+    1. Weight of your drone  
+    2. Efficiency  
+    3. Power  
+    4. Torque
 
     Types of motors:
     There are 2 types of motors used in drones: brushed and brushless motors.
