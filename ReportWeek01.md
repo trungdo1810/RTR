@@ -2,9 +2,9 @@
 
 ### *Thực tập sinh: Đỗ Thành Trung*
 
-1. Drone motor and ESC  
-    1.1. Select motor  
-    Things to consider when choosing drone motors:   
+**1. Drone motor and ESC**
+    **1.1. Select motor** 
+    Things to consider when choosing drone motors:
     1. Weight of your drone  
     2. Efficiency  
     3. Power  
@@ -21,7 +21,7 @@
 | Brushed DC motor| Brushed DC motors possess a rotating armature that works like a electromagnet . A rotary switch is connected that helps to reverse current direction for every half cycle so that poles can be pushed or pulled against permanent magnets connected outside motor.       | Commonly used for drones. | It can serve users up to 1000 hours | Maintenance for carbon crushes to ensure proper energy consumption and satisfactory operation 
 | Brushless DC motor | 	Brushless DC Motors do not possess brushes, they just have a permanent magnet and it switched with electronic polarity changes. Its movements can be controlled via a dedicated electronic controller and speed feedback mechanism.        | Commonly used for drones that demand higher rotation speeds to manage flights. | work effectively up to more than 1000 hours | Brusheless motors are highly energy efficient as compared to brushed ones.
 
-    If the motor is expected to be used for very less time, it is recommended to connect brushed DC motor as it will provide sufficient output with cost effectiveness. But in case if you need motors continuously or when your device is going to work on higher power rating then brushless motor will be best idea for long hour flights.
+>If the motor is expected to be used for very less time, it is recommended to connect brushed DC motor as it will provide sufficient output with cost effectiveness. But in case if you need motors continuously or when your device is going to work on higher power rating then brushless motor will be best idea for long hour flights.
 
 - BLDC motor:  
 A BLDC motor consist of two main parts, a stator and a rotor.  
@@ -34,14 +34,14 @@ A BLDC motor consist of two main parts, a stator and a rotor.
 <img src='https://sklc-tinymce-2021.s3.amazonaws.com/comp/2021/03/mceclip11_1614687945.gif' width="50%" height="50%" >
 </div>
 
-1.2. Electronic Speed Controller(ESC):  
+**1.2. Electronic Speed Controller(ESC):**  
 An ESC controls the brushless motor movement or speed by activating the appropriate MOSFETs to create the rotating magnetic field so that the motor rotates.  
 The battery supplies direct current, while the brushless motor accepts three-phase alternating current.
 <div align = 'center'>
 <img src = 'https://i.dronemanya.com/%D1%81%D1%85%D0%B5%D0%BC%D0%B0-%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D1%80%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%D0%BE%D0%B2-%D0%BD%D0%B0%D0%BF%D1%80%D1%8F%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BA-%D0%91%D0%9A-%D0%BC%D0%BE%D1%82%D0%BE%D1%80%D0%B0%D0%BC-a932f.jpeg' > 
 </div>
 
-2. ESC Protocols:  
+**2. ESC Protocols:** 
       
 ESC Protocols is the “language” that the flight controllers and ESC use to communicate, one of the most basic task is to tell how fast the motor should be spinning.
 <br/>The Oneshot, Multishot and Dshot are the ESC calibration protocols.This protocol allows connecting Electronic speed controllers (ESC) to flight controller.  
@@ -84,5 +84,6 @@ There are 4 different Dshot protocol types::
 4. DShot150 ESC – 150Kbits/Sec.    
 
 ![Speed Comparison](https://oscarliang.com/ctt/uploads/2016/11/esc-protocol-speed-comparison-hz.jpg)
-3. PID control
+
+**3. PID control**
 
