@@ -57,6 +57,7 @@ The signal delay is 2ms.
 
 - Unsynced output  
 - Limited updated rate (frequency)  
+
 <div align='center'>
 <img src='image/PWM_problem.png' alt = 'PWM_problem'>
 </div>
@@ -75,15 +76,18 @@ This is the fastest ESC protocol among all the above with a maximum frequency of
 <br/>**Dshot (Digitalshot)**  
 Standard PWM, Oneshot125, Oneshot42, and Multishot these are all analog signals. They all rely on the length of the electrical pulse to determine the value being sent.
 
-The Dshot is itself a digital signal so it’s exciting to know that ESC calibration will no longer be necessary. Because of the nature of the digital signal, which is one’s and zero’s, it will also be much more resistant to electrical noise..
+The Dshot is itself a digital signal so it’s exciting to know that ESC calibration will no longer be necessary. Because of the nature of the digital signal, which is one’s and zero’s, it will also be much more resistant to electrical noise.  
+A DShot data packet consists of a total of 16 bits: 11 bits for throttle value (211 = 2048 steps), 1 bit for telemetry request and 4 bit for CRC checksum (cyclic redundancy check).
 
-There are 4 different Dshot protocol types::
+There are 4 different Dshot protocol types:
 1. DShot1200 ESC - 1200Kbits/Sec.  
 2. DShot600 ESC - 600Kbits/Sec.  
 3. DShot300 ESC - 300Kbits/Sec.  
 4. DShot150 ESC - 150Kbits/Sec.    
 
-![Speed Comparison](https://oscarliang.com/ctt/uploads/2016/11/esc-protocol-speed-comparison-hz.jpg)
+<div align='center'>
+<img src='https://oscarliang.com/ctt/uploads/2016/11/esc-protocol-speed-comparison-hz.jpg' alt = 'Speed Comparison'>
+</div>
 
 ### **3. PID control**
 
