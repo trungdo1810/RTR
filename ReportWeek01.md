@@ -1,6 +1,6 @@
 <h1 align="center">Week 01 Report</h1>
 
-### *Thực tập sinh: Đỗ Thành Trung*
+### *Intern: Do Thanh Trung*
 
 ### **1. Drone motor and ESC**  
 **1.1. Select motor**  
