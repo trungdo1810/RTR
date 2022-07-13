@@ -29,9 +29,17 @@ A BLDC motor consist of two main parts, a stator and a rotor.
 <img src = 'https://howtomechatronics.com/wp-content/uploads/2019/02/Brushless-motor-main-parts-a-stator-and-a-rotor.png?ezimgfmt=rs:352x270/rscb2/ng:webp/ngcb2'>
 </div>
 
-<center> Brushless DC Motor Working Principle </center>
+Here we can also mention that BLDC motors can be inrunners or outrunners. An inrunner brushless motor has the permanent magnets inside the electromagnets, and vice versa, an outrunner motor has the permanent magnets outside the electromagnets.
+<div align = 'center'>
+<img src='https://i.pinimg.com/originals/1d/34/09/1d340941bd00fd427fe1e7497a42be09.png'>
+
+*Types of BLDC*
+</div>
+
 <div align = 'center'>
 <img src='https://sklc-tinymce-2021.s3.amazonaws.com/comp/2021/03/mceclip11_1614687945.gif' width="50%" height="50%" >
+
+*Brushless DC Motor Working Principle*
 </div>
 
 **1.2. Electronic Speed Controller(ESC):**  
@@ -81,10 +89,10 @@ The Dshot is itself a digital signal so it’s exciting to know that ESC calibra
 A DShot data packet consists of a total of 16 bits: 11 bits for throttle value (211 = 2048 steps), 1 bit for telemetry request and 4 bit for CRC checksum (cyclic redundancy check).
 
 There are 4 different Dshot protocol types:
-1. DShot1200 ESC - 1200Kbits/Sec.  
-2. DShot600 ESC - 600Kbits/Sec.  
-3. DShot300 ESC - 300Kbits/Sec.  
-4. DShot150 ESC - 150Kbits/Sec.    
+1. DShot150 ESC - 150Kbits/Sec  
+2. DShot300 ESC - 300Kbits/Sec 
+3. DShot600 ESC - 600Kbits/Sec  
+4. DShot1200 ESC - 1200Kbits/Sec    
 
 <div align='center'>
 <img src='https://oscarliang.com/ctt/uploads/2016/11/esc-protocol-speed-comparison-hz.jpg' alt = 'Speed Comparison'>
