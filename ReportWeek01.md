@@ -31,7 +31,7 @@ A BLDC motor consist of two main parts, a stator and a rotor.
 
 Here we can also mention that BLDC motors can be inrunners or outrunners. An inrunner brushless motor has the permanent magnets inside the electromagnets, and vice versa, an outrunner motor has the permanent magnets outside the electromagnets.
 <div align = 'center'>
-<img src='https://i.pinimg.com/originals/1d/34/09/1d340941bd00fd427fe1e7497a42be09.png'>
+<img src='https://i.pinimg.com/originals/1d/34/09/1d340941bd00fd427fe1e7497a42be09.png' width="80%" height="80%">
 
 *Types of BLDC*
 </div>
