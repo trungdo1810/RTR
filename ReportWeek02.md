@@ -1,4 +1,4 @@
-<h1 align="center">Week 02 Report</h1>
+<h1 align="center">Week 03 Report</h1>
 
 ### *Intern: Do Thanh Trung*
 **1. Sensors in drone**  
@@ -35,7 +35,7 @@ When used independently from each other, the raw readings from the accelerometer
 
     Kalman filter is an algorithm that provides estimates of some unknown variables given the measurements observed over time. Kalman filters have been demonstrating its usefulness in various applications. Kalman filters have relatively simple form and require small computational power.
 
-To be able to adjust, filter noise or track objects, Kalman filter consists of 2 important parts:
+To be able to adjust, filter noise or track objects, Kalman filter consists of  important parts:
 
  - First : the measured value, there is always a noise so you can filter this out come up with the second element.
  - Second: variable Prediction  from previous times.
