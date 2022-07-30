@@ -10,7 +10,6 @@
    ### **1. Overview**    
 - Object tracking is an application of deep learning where the program takes an initial set of object detections and develops a unique identification for each of the initial detections and then tracks the detected objects as they move around frames in a video.
 - In other words, object tracking is the task of automatically identifying objects in a video and interpreting them as a set of trajectories with high accuracy.
-
 <div align='center'>
     <img src = "https://i.imgur.com/68mRoZO.gif" width="80%">
 
