@@ -10,21 +10,21 @@
    ### **1. Overview**    
 - Object tracking is an application of deep learning where the program takes an initial set of object detections and develops a unique identification for each of the initial detections and then tracks the detected objects as they move around frames in a video.
 - In other words, object tracking is the task of automatically identifying objects in a video and interpreting them as a set of trajectories with high accuracy.
-    <div align='center'>
-        <img src = "https://i.imgur.com/68mRoZO.gif" width="80%">
+<div align='center'>
+    <img src = "https://i.imgur.com/68mRoZO.gif" width="80%">
 
-    *Car tracking*
-    </div>
+*Car tracking*
+</div>
 
 The difference between detecting an object and tracking:  
 
 - **Tracking is faster than detection**: While the pre-trained classifier needs to detect an object at every frame of the video (which leads to potentially high computational loads), to utilize an object tracker we specify the bounding box of an object once and based on the data on its position, speed, and direction, the tracking process goes faster.
 - **Tracking is more stable**: In cases where the tracked object is partially overlapped by another object, the detection algorithm may “lose” it, while the tracking algorithms are more robust to partial occlusion.
-    <div align='center'>
-        <img src = "https://www.researchgate.net/profile/Praveen-Kumar-362/publication/220166473/figure/fig5/AS:305576551698450@1449866535633/Object-Tracking-during-and-after-Occlusion.png">
+<div align='center'>
+    <img src = "https://www.researchgate.net/profile/Praveen-Kumar-362/publication/220166473/figure/fig5/AS:305576551698450@1449866535633/Object-Tracking-during-and-after-Occlusion.png">
 
-    *Object Tracking during and after Occlusion*
-    </div>
+*Object Tracking during and after Occlusion*
+</div>
 
 - **Tracking provides more information**: If we are not interested in the belonging of an object to a specific class, the tracking algorithm allows us to track the movement path of a specific object, while the detection algorithm cannot.
 <div align='center'>
@@ -42,7 +42,8 @@ Object tracking can be defined by two levels:
 ### **3. Popular Object Tracking Algorithms**
 - **OpenCV Object Tracking**  
     - OpenCV object tracking is a popular method because OpenCV has so many algorithms built-in that are specifically optimized for the needs and objectives of object or motion tracking.  
-    - Specific Open CV object trackers include the BOOSTING, MIL, KCF, CSRT, MedianFlow, TLD, MOSSE, and GOTURN trackers. Each of these trackers is best for different goals. For example, CSRT is best when the user requires a higher object tracking accuracy and can tolerate slower FPS throughput.
+    - Specific Open CV object trackers include the BOOSTING, MIL, KCF, CSRT, MedianFlow, TLD, MOSSE, and GOTURN trackers. Each of these trackers is best for different goals. For example, CSRT is best when the user requires a higher object tracking accuracy and can tolerate slower FPS throughput.  
+    
     >#### **BOOSTING Tracker**
     This method is based on the online version of the AdaBoost algorithm - the algorithm increases the weights of incorrectly classified objects, which allows a weak classifier to “focus” on their detection.
     - *Pros*: an object is tracked quite accurately, even though the algorithm is already outdated.
