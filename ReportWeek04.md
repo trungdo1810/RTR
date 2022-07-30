@@ -136,6 +136,7 @@ Object tracking can be defined by two levels:
 
 *MDNet*
 </div>
+
 - **SiamMask**
     - SiamMask aims to improve the offline training procedure of the fully-convolutional Siamese network. Siamese networks take in two inputs: a cropped image and a larger search image to obtain a dense spatial feature representation. 
 
