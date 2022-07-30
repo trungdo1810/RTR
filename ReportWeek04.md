@@ -10,21 +10,21 @@
    ### **1. Overview**    
 - Object tracking is an application of deep learning where the program takes an initial set of object detections and develops a unique identification for each of the initial detections and then tracks the detected objects as they move around frames in a video.
 - In other words, object tracking is the task of automatically identifying objects in a video and interpreting them as a set of trajectories with high accuracy.
-<div align='center'>
-    <img src = "https://i.imgur.com/68mRoZO.gif" width="80%">
+    <div align='center'>
+        <img src = "https://i.imgur.com/68mRoZO.gif" width="80%">
 
-*Car tracking*
-</div>
+    *Car tracking*
+    </div>
 
 The difference between detecting an object and tracking:  
 
 - **Tracking is faster than detection**: While the pre-trained classifier needs to detect an object at every frame of the video (which leads to potentially high computational loads), to utilize an object tracker we specify the bounding box of an object once and based on the data on its position, speed, and direction, the tracking process goes faster.
-- **Tracking is more stable**: In cases where the tracked object is partially overlapped by another object, the detection algorithm may “lose” it, while the tracking algorithms are more robust to partial occlusion.  
-<div align='center'>
-    <img src = "https://www.researchgate.net/profile/Praveen-Kumar-362/publication/220166473/figure/fig5/AS:305576551698450@1449866535633/Object-Tracking-during-and-after-Occlusion.png">
+- **Tracking is more stable**: In cases where the tracked object is partially overlapped by another object, the detection algorithm may “lose” it, while the tracking algorithms are more robust to partial occlusion.
+    <div align='center'>
+        <img src = "https://www.researchgate.net/profile/Praveen-Kumar-362/publication/220166473/figure/fig5/AS:305576551698450@1449866535633/Object-Tracking-during-and-after-Occlusion.png">
 
-*Object Tracking during and after Occlusion*
-</div>
+    *Object Tracking during and after Occlusion*
+    </div>
 
 - **Tracking provides more information**: If we are not interested in the belonging of an object to a specific class, the tracking algorithm allows us to track the movement path of a specific object, while the detection algorithm cannot.
 <div align='center'>
