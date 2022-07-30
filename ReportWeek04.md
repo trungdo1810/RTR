@@ -12,7 +12,7 @@
 - In other words, object tracking is the task of automatically identifying objects in a video and interpreting them as a set of trajectories with high accuracy.
 
 <div align='center'>
-    <img src = "https://i.imgur.com/68mRoZO.gif" width=80%>
+    <img src = "https://i.imgur.com/68mRoZO.gif" width="80%">
 
 *Car tracking*
 </div>
@@ -29,7 +29,7 @@ The difference between detecting an object and tracking:
 
 - **Tracking provides more information**: If we are not interested in the belonging of an object to a specific class, the tracking algorithm allows us to track the movement path of a specific object, while the detection algorithm cannot.
 <div align='center'>
-    <img src = "https://viso.ai/wp-content/uploads/2021/07/multiple-object-tracking.jpg" width=70%>
+    <img src = "https://viso.ai/wp-content/uploads/2021/07/multiple-object-tracking.jpg" width="70%">
 
 *Detection Algorithm vs Tracking Algorithm*
 </div>
