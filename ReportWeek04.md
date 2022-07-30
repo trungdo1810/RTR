@@ -115,5 +115,28 @@ Object tracking can be defined by two levels:
     </div>
 
 - **DeepSORT**
+
+    - DeepSORT is one of the most popular object tracking algorithms. It is an extension to Simple Online Real-time Tracker or SORT, which is an online-based tracking algorithm.  
+    - SORT is an algorithm that uses the Kalman filter for estimating the location of the object given the previous location of the same. The Kalman filter is very effective against the occlusions.  
+
+    - SORT comprises of three components:  
+        - Detection: Detecting the object of interest in the initial stage i.  
+        - Estimation: Predicting the future location i+1 of the object from the initial stage using the Kalman filter. It is worth noting that the Kalman filter just approximates the object’s new location, which needs to be optimized.  
+        - Association: As the Kalman filter estimates the future location of the object i+1, it needs to be optimized using the correct position. This is usually done by detecting the position of the object in that position i+1. The problem is solved optimally using the Hungarian algorithm.
 - **MDNet**
+    - Multi-Domain Net is a type of object tracking algorithm which leverages large-scale data for training. Its objective is to learn vast variations and spatial relationships.  
+    MDNet is trained to learn the shared representation of targets from multiple annotated videos, meaning it takes multiple annotated videos belonging to different domains. 
+
+    - MDNet consists of pretraining and online visual tracking:
+        - Pretraining: In pretraining, the network is required to learn multi-domain representation. To achieve this, the algorithm is trained on multiple annotated videos to learn representation and spatial features. 
+
+        - Online visual tracking: Once pre-training is done, the domain-specific layers are remove,d and the network is only left with shared layers, which consist of learned representations. During the inference, a binary classification layer is added, which is trained or fine-tuned online. 
+<div align='center'>
+<img src = "https://assets-global.website-files.com/5d7b77b063a9066d83e1209c/61932b0ce47406badf2a6223_uCZ5q8x3JSxWn2xmCR1RWKKXU2qi1CTrnlIS2NWSnQQlXK7b1JvYkUmmuGedcxQ38ZvwmeEmbrCtlUbhXjQM4JOSRZyesl9sXu4pho8DoO8gwkCxramX5w9nDIJtouNJfvqGyHhH.png" width=70%>
+
+*MDNet*
+</div>
 - **SiamMask**
+    - SiamMask aims to improve the offline training procedure of the fully-convolutional Siamese network. Siamese networks take in two inputs: a cropped image and a larger search image to obtain a dense spatial feature representation. 
+
+    - The Siamese network yields one output. It measures the similarity of two input images and determines whether or not the same objects exist in the two images. This framework is very efficient for object tracking by augmenting their loss with a binary segmentation task. 
