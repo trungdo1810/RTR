@@ -20,7 +20,7 @@
 The difference between detecting an object and tracking:  
 
 - **Tracking is faster than detection**: While the pre-trained classifier needs to detect an object at every frame of the video (which leads to potentially high computational loads), to utilize an object tracker we specify the bounding box of an object once and based on the data on its position, speed, and direction, the tracking process goes faster.
-- **Tracking is more stable**: In cases where the tracked object is partially overlapped by another object, the detection algorithm may “lose” it, while the tracking algorithms are more robust to partial occlusion.
+- **Tracking is more stable**: In cases where the tracked object is partially overlapped by another object, the detection algorithm may “lose” it, while the tracking algorithms are more robust to partial occlusion.  
 <div align='center'>
     <img src = "https://www.researchgate.net/profile/Praveen-Kumar-362/publication/220166473/figure/fig5/AS:305576551698450@1449866535633/Object-Tracking-during-and-after-Occlusion.png">
 
