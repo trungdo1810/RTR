@@ -7,7 +7,7 @@
 - Demo
 
 > ### **Tracking algorithms**  
-   **1. Overview**    
+   ### **1. Overview**    
 - Object tracking is an application of deep learning where the program takes an initial set of object detections and develops a unique identification for each of the initial detections and then tracks the detected objects as they move around frames in a video.
 - In other words, object tracking is the task of automatically identifying objects in a video and interpreting them as a set of trajectories with high accuracy.
 
@@ -34,13 +34,13 @@ The difference between detecting an object and tracking:
 *Detection Algorithm vs Tracking Algorithm*
 </div>
 
-**2. Levels of Object Tracking**  
+### **2. Levels of Object Tracking**  
 Object tracking can be defined by two levels:
 
 - Single Object Tracking(SOT)
 - Multiple Object Tracking(MOT): it aims to track objects of multiple classes. 
 
-**3. Popular Object Tracking Algorithms**
+### **3. Popular Object Tracking Algorithms**
 - **OpenCV Object Tracking**  
     - OpenCV object tracking is a popular method because OpenCV has so many algorithms built-in that are specifically optimized for the needs and objectives of object or motion tracking.  
     - Specific Open CV object trackers include the BOOSTING, MIL, KCF, CSRT, MedianFlow, TLD, MOSSE, and GOTURN trackers. Each of these trackers is best for different goals. For example, CSRT is best when the user requires a higher object tracking accuracy and can tolerate slower FPS throughput.
