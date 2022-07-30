@@ -4,7 +4,6 @@
 ### **Target**
 - Tracking algorithms
 - Application of Kalman Filter in object tracking
-- Demo
 
 > ### **Tracking algorithms**  
    ### **1. Overview**    
@@ -44,7 +43,7 @@ Object tracking can be defined by two levels:
     - OpenCV object tracking is a popular method because OpenCV has so many algorithms built-in that are specifically optimized for the needs and objectives of object or motion tracking.  
     - Specific Open CV object trackers include the BOOSTING, MIL, KCF, CSRT, MedianFlow, TLD, MOSSE, and GOTURN trackers. Each of these trackers is best for different goals. For example, CSRT is best when the user requires a higher object tracking accuracy and can tolerate slower FPS throughput.  
     
-    >#### **BOOSTING Tracker**
+    >#### **[BOOSTING Tracker](https://www.researchgate.net/publication/221259753_Real-Time_Tracking_via_On-line_Boosting)**
     This method is based on the online version of the AdaBoost algorithm - the algorithm increases the weights of incorrectly classified objects, which allows a weak classifier to “focus” on their detection.
     - *Pros*: an object is tracked quite accurately, even though the algorithm is already outdated.
     - *Cons*: relatively low speed, strong susceptibility to noise and obstacles, and the inability to stop tracking when the object is lost.
@@ -54,7 +53,7 @@ Object tracking can be defined by two levels:
     *BOOSTING tracker results*
     </div>
 
-    >#### **MIL (Multiple Instance Learning) Tracker**
+    >#### **[MIL (Multiple Instance Learning) Tracker](https://faculty.ucmerced.edu/mhyang/papers/cvpr09a.pdf)**
     This algorithm has the same approach as BOOSTING, however, instead of guessing where the tracked object is in the next frame, an approach is used in which several potentially positive objects, called a “bag”, are selected around a positive definite object. A positive “bag” contains at least one positive result.
     - *Pros*: more robust to noise, shows fairly good accuracy.
     - *Cons*: relatively low speed and the impossibility of stopping tracking when the object is lost.
@@ -64,7 +63,7 @@ Object tracking can be defined by two levels:
     *MIL tracker results*
     </div>
 
-    >#### **KCF (Kernelized Correlation Filters) Tracker**
+    >#### **[KCF (Kernelized Correlation Filters) Tracker](https://arxiv.org/pdf/1404.7584.pdf)**
     Is a combination of two algorithms: BOOSTING and MIL. The concept of the method is that a set of images from a “bag” obtained by the MIL method has many overlapping areas. Correlation filtering applied to these areas makes it possible to track the movement of an object with high accuracy and to predict its further position.
     - *Pros*: sufficiently high speed and accuracy, stops tracking when the tracked object is lost.
     - *Cons*: inability to continue tracking after the loss of the object.
@@ -74,7 +73,7 @@ Object tracking can be defined by two levels:
     *KCF tracker results*
     </div>
 
-    >#### **TLD (Tracking Learning Detection) Tracker**
+    >#### **[TLD (Tracking Learning Detection) Tracker](http://vision.stanford.edu/teaching/cs231b_spring1415/papers/Kalal-PAMI.pdf)**
     This method allows you to decompose the task of tracking an object into three processes: tracking, learning and detecting. The tracker (based on the MedianFlow tracker) tracks the object, while the detector localizes external signs and corrects the tracker if necessary. The learning part evaluates detection errors and prevents them in the future by recognizing missed or false detections.
     - *Pros*: shows relatively good results in terms of resistance to object scaling and overlapping by other objects.
     - *Cons*: rather unpredictable behavior, there is the instability of detection and tracking, constant loss of an object, tracking similar objects instead of the selected one.
@@ -84,7 +83,7 @@ Object tracking can be defined by two levels:
     *TLD tracker results*
     </div>
 
-    >#### **MedianFlow Tracker**
+    >#### **[MedianFlow Tracker](http://kahlan.eps.surrey.ac.uk/featurespace/tld/Publications/2010_icpr.pdf)**
     This algorithm is based on the Lucas-Kanade method. The algorithm tracks the movement of the object in the forward and backward directions in time and estimates the error of these trajectories, which allows the tracker to predict the further position of the object in real-time.
     - *Pros*: sufficiently high speed and tracking accuracy, if the object isn’t overlapped by other objects and the speed of its movement is not too high. The algorithm quite accurately determines the loss of the object.
     - *Cons*: high probability of object loss at high speed of its movement.
@@ -94,7 +93,7 @@ Object tracking can be defined by two levels:
     *MedianFlow tracker results*
     </div>
 
-    >#### **MOSSE (Minimum Output Sum of Squared Error) tracker**
+    >#### **[MOSSE (Minimum Output Sum of Squared Error) Tracker](https://www.cs.colostate.edu/~draper/papers/bolme_cvpr10.pdf)**
     This algorithm is based on the calculation of adaptive correlations in Fourier space. The filter minimizes the sum of squared errors between the actual correlation output and the predicted correlation output. This tracker is robust to changes in lighting, scale, pose, and non-rigid deformations of the object.
     - *Pros*: very high tracking speed, more successful in continuing tracking the object if it was lost.
     - *Cons*: high likelihood of continuing tracking if the subject is lost and does not appear in the frame.
@@ -104,7 +103,7 @@ Object tracking can be defined by two levels:
     *MOSSE tracker results*
     </div>
 
-    >#### **CSRT (Discriminative Correlation Filter with Channel and Spatial Reliability) tracker**
+    >#### **[CSRT (Discriminative Correlation Filter with Channel and Spatial Reliability) Tracker](https://arxiv.org/pdf/1611.08461.pdf)**
     This algorithm uses spatial reliability maps for adjusting the filter support to the part of the selected region from the frame for tracking, which gives an ability to increase the search area and track non-rectangular objects. Reliability indices reflect the quality of the studied filters by channel and are used as weights for localization. Thus, using HoGs and Colornames as feature sets, the algorithm performs relatively well.
     - *Pros*: among the previous algorithms it shows comparatively better accuracy, resistance to overlapping by other objects.
     - *Cons*: sufficiently low speed, an unstable operation when the object is lost.
@@ -114,7 +113,7 @@ Object tracking can be defined by two levels:
     *CSRT tracker results*
     </div>
 
-- **DeepSORT**
+- **[DeepSORT](https://arxiv.org/pdf/1703.07402.pdf)**
 
     - DeepSORT is one of the most popular object tracking algorithms. It is an extension to Simple Online Real-time Tracker or SORT, which is an online-based tracking algorithm.  
     - SORT is an algorithm that uses the Kalman filter for estimating the location of the object given the previous location of the same. The Kalman filter is very effective against the occlusions.  
@@ -141,3 +140,10 @@ Object tracking can be defined by two levels:
     - SiamMask aims to improve the offline training procedure of the fully-convolutional Siamese network. Siamese networks take in two inputs: a cropped image and a larger search image to obtain a dense spatial feature representation. 
 
     - The Siamese network yields one output. It measures the similarity of two input images and determines whether or not the same objects exist in the two images. This framework is very efficient for object tracking by augmenting their loss with a binary segmentation task. 
+<div align='center'>
+<img src = "https://assets-global.website-files.com/5d7b77b063a9066d83e1209c/61932b0cd2be6ab27de62a94_ZLfEioqB8x7IgdCeIkKDHonq0f4XsGTUorrVbzna15ZHJ0JeJVgGMDETBgoWc_pEbE6BNxfO-S7hwg-7M8hvr-h3pgiTKgdlYz4qdHjngg8fNXkd0aB_8cnP21xIse22iLXTDi8g.png" width=70%>
+
+*SiamMask*
+</div>
+
+> ### **Application of Kalman Filter in object tracking**  
