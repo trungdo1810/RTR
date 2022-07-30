@@ -12,10 +12,11 @@
 - In other words, object tracking is the task of automatically identifying objects in a video and interpreting them as a set of trajectories with high accuracy.
 
 <div align='center'>
-    <img src = "https://i.imgur.com/68mRoZO.gif" width=70%>
+    <img src = "https://i.imgur.com/68mRoZO.gif" width=80%>
 
 *Car tracking*
 </div>
+
 The difference between detecting an object and tracking:  
 
 - **Tracking is faster than detection**: While the pre-trained classifier needs to detect an object at every frame of the video (which leads to potentially high computational loads), to utilize an object tracker we specify the bounding box of an object once and based on the data on its position, speed, and direction, the tracking process goes faster.
