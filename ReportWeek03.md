@@ -82,7 +82,7 @@ Extended Kalman filter (EKF) and Discrete Cosine Matrix (DCM). DCM was the first
 The advantage of the EKF over the simpler complementary filter algorithms (i.e. “Inertial Nav”), is that by fusing all available measurements it is better able to reject measurements with significant errors. This makes the vehicle less susceptible to faults that affect a single sensor. Current stable versions of ArduPilot use EKF3 as their primary attitude and position estimation source with DCM running quietly in the background.  
 
 **INNOVATION**  
-The EKF constantly makes predictions of position/velocity/attitude based on past input and compares them to present measurements. Is the prediction is different than measured, an innovation occurs. If the difference is not too great, the measurement is used, on weighted basis. Large innovation for too long will cause the EKF to reject the sensor or declare that its "lost" 
+The EKF constantly makes predictions of position/velocity/attitude based on past input and compares them to present measurements. Is the prediction is different than measured, an innovation occurs. If the difference is not too great, the measurement is used, on weighted basis. Large innovation for too long will cause the EKF to reject the sensor or declare that its "lost".
 
 Lane Switch and Fallback to DCM  
 If the innovations are too great for too long, the EKF will switch to a redundant sensor, if available, or ultimately fall back to using DCM(Plane/Rover only) which allows "dead reckoning" even without a GPS.
