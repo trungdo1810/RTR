@@ -10,7 +10,7 @@
 
 ### **1. Overview**  
 - The ArduPilot software suite consists of navigation software (typically referred to as firmware when it is compiled to binary form for microcontroller hardware targets) running on the vehicle (either Copter, Plane, Rover, AntennaTracker, or Sub), along with ground station controlling software including Mission Planner, APM Planner, QGroundControl, MavProxy, Tower and others. 
-- 
+- Gazebo is used to create models and simulation environments
 <div align='center'>
     <img src = "image\Architecture_System_of_Simulation.png">
 
@@ -67,8 +67,49 @@ Gazebo is a 3D dynamic simulator with the ability to accurately and efficiently 
 </div>
 
 >> **Why should you use ROS for robotics ?**
+- ROS is general
+- ROS has great simulation tools
+- ROS is light
+- Control multiple robots with ROS
+- ROS is an open source project with a permissive license
 
+>> ROS philosophy
+- **Peer-to-peer**: individual packages communicate over defined API
+- **Network**: Multiple computer can run and communicate over the network
+- **Multi-Language**: ROS module can be written and multiple languages (C++, Python, Matlab, Java…)
+- **Thin**: stand-alone libraries are build inside ROS layer
+- **Free and open source**
 
+>> ROS Build System
+<div align='center'>
+    <img src = "image/ROS-Build-system.png">
+
+*ROS Build System*
+</div>
+
+>> ROS Workspace
+<div align='center'>
+    <img src = "image/ROS-Workspace.png">
+
+*ROS Workspace*
+</div>
+
+>> ROS Package
+<div align='center'>
+    <img src = "image/ROS-Package.png">
+
+*ROS Package*
+</div>
+
+>> How ROS Works
+- ROS ideas: a robotic task can be decomposed into many independent subsystems (**Node**)
+- Nodes (code or tools) communicate with each other using messages (**Topics**)
+- Each node can send or get data using publish/subscribe model
+<div align='center'>
+    <img src = "image/ROS-Work.png">
+
+*ROS Work*
+</div>
 
 ### **3. Demo**   
 - [Using YOLO algorithm to detect object - Drone Gazebo Simulation]()
