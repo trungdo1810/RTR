@@ -9,7 +9,7 @@
 - Demo
 
 ### **1. Overview**  
-- The ArduPilot software suite consists of navigation software (typically referred to as firmware when it is compiled to binary form for microcontroller hardware targets) running on the vehicle (either Copter, Plane, Rover, AntennaTracker, or Sub), along with ground station controlling software including Mission Planner, APM Planner, QGroundControl, MavProxy, Tower and others. 
+
 - Gazebo is used to create models and simulation environments
 <div align='center'>
     <img src = "image\Architecture_System_of_Simulation.png">
@@ -20,7 +20,9 @@
 
 ### **2. Introduction** 
 > ## [Ardupilot](https://ardupilot.org/)
-ArduPilot is a trusted, versatile, and open source autopilot system supporting many vehicle types: multi-copters, traditional helicopters, fixed wing aircraft, boats, submarines, rovers and more.
+- ArduPilot is a trusted, versatile, and open source autopilot system supporting many vehicle types: multi-copters, traditional helicopters, fixed wing aircraft, boats, submarines, rovers and more.
+- The ArduPilot software suite consists of navigation software (typically referred to as firmware when it is compiled to binary form for microcontroller hardware targets) running on the vehicle (either Copter, Plane, Rover, AntennaTracker, or Sub), along with ground station controlling software including Mission Planner, APM Planner, QGroundControl, MavProxy, Tower and others. 
+
 <div align='center'>
     <img src = "https://ardupilot.org/ardupilot/_images/home_ardupilot.jpg">
 
@@ -81,6 +83,7 @@ Gazebo is a 3D dynamic simulator with the ability to accurately and efficiently 
 - **Free and open source**
 
 >> ROS Build System
+-
 <div align='center'>
     <img src = "image/ROS-Build-system.png">
 
@@ -88,6 +91,7 @@ Gazebo is a 3D dynamic simulator with the ability to accurately and efficiently 
 </div>
 
 >> ROS Workspace
+- 
 <div align='center'>
     <img src = "image/ROS-Workspace.png">
 
@@ -95,6 +99,7 @@ Gazebo is a 3D dynamic simulator with the ability to accurately and efficiently 
 </div>
 
 >> ROS Package
+- 
 <div align='center'>
     <img src = "image/ROS-Package.png">
 
