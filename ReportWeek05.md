@@ -10,7 +10,9 @@
 
 ### **1. Overview**  
 
-- Gazebo is used to create models and simulation environments
+- Gazebo simulator is used to create models and simulation environments. Simulation allows for the safe testing of experimental code and settings. Crashing virtual vehicles is a lot cheaper than crashing real ones!
+- 
+
 <div align='center'>
     <img src = "image\Architecture_System_of_Simulation.png">
 
@@ -99,11 +101,12 @@ Gazebo is a 3D dynamic simulator with the ability to accurately and efficiently 
 </div>
 
 >> ROS Package
-- 
+- When we execute the catkin_make instruction, the compilation system will look for the package executable package one by one.
+
 <div align='center'>
     <img src = "image/ROS-Package.png">
 
-*ROS Package*
+*ROS Package Structure*
 </div>
 
 >> How ROS Works
@@ -117,6 +120,6 @@ Gazebo is a 3D dynamic simulator with the ability to accurately and efficiently 
 </div>
 
 ### **3. Demo**   
-- [Using YOLO algorithm to detect object - Drone Gazebo Simulation]()
-- [Obstacles avoidance using Lidar ]()
-- [Basic Drone Swarm]()
+- [Using YOLO algorithm to detect object - Drone Gazebo Simulation](https://youtu.be/x5svMPJEZEA)
+- [Obstacles avoidance using Lidar ](https://youtu.be/f5gf13DRQ5o)
+- [Basic Drone Swarm](https://youtu.be/P61jZpc_cTM)
