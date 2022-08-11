@@ -65,7 +65,7 @@ Gazebo is a 3D dynamic simulator with the ability to accurately and efficiently 
     - Contain >2000 software package  
 
 <div align='center'>
-    <img src = "image/ROS.png">
+    <img src = "image/ROS.jpg">
 
 *ROS*
 </div>
@@ -85,7 +85,7 @@ Gazebo is a 3D dynamic simulator with the ability to accurately and efficiently 
 - **Free and open source**
 
 >> ROS Build System
--
+- 
 <div align='center'>
     <img src = "image/ROS-Build-system.png">
 
