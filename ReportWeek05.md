@@ -15,7 +15,7 @@
 <div align='center'>
     <img src = "image\overview.jpg">
 
-*Architecture System of Simulation*
+*Overview System*
 </div>
 
 - Gazebo is a 3D robotics simulator used to create models and simulation environments. 
@@ -91,7 +91,10 @@ Gazebo is a 3D dynamic simulator with the ability to accurately and efficiently 
 - **Free and open source**
 
 >> ROS Build System
-- 
+- A build system is responsible for generating 'targets' from raw source code that can be used by an end user.
+- ROS is a very large collection of loosely federated packages. That means lots of independent packages which depend on each other, utilize various programming languages, tools, and code organization conventions.  
+- [catkin](http://wiki.ros.org/catkin) specifically tries to improve development on large sets of related packages in a consistent and conventional way. 
+
 <div align='center'>
     <img src = "image/ROS-Build-system.png">
 
@@ -99,7 +102,7 @@ Gazebo is a 3D dynamic simulator with the ability to accurately and efficiently 
 </div>
 
 >> ROS Workspace
-- 
+- A workspace is a set of directories (or folders) where you store related pieces of ROS code.
 <div align='center'>
     <img src = "image/ROS-Workspace.png">
 
