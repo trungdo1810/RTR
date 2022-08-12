@@ -27,7 +27,7 @@
 </div>
 
 ### **II. Introduction** 
-> ## 1.[Ardupilot](https://ardupilot.org/)
+> ### 1. [Ardupilot](https://ardupilot.org/)
 - ArduPilot is a trusted, versatile, and open source autopilot system supporting many vehicle types: multi-copters, traditional helicopters, fixed wing aircraft, boats, submarines, rovers and more.
 - The ArduPilot software suite consists of navigation software (typically referred to as firmware when it is compiled to binary form for microcontroller hardware targets) running on the vehicle (either Copter, Plane, Rover, AntennaTracker, or Sub), along with ground station controlling software including Mission Planner, APM Planner, QGroundControl, MavProxy, Tower and others. 
 
@@ -37,7 +37,7 @@
 *Ardupilot Ecosystem*
 </div>
 
-> ## [Gazebo](https://gazebosim.org/)
+> ### 2. [Gazebo](https://gazebosim.org/)
 
 Gazebo is a 3D dynamic simulator with the ability to accurately and efficiently simulate populations of robots in complex indoor and outdoor environments. While similar to game engines, Gazebo offers physics simulation at a much higher degree of fidelity, a suite of sensors, and interfaces for both users and programs.
 <div align='center'>
@@ -63,7 +63,7 @@ Gazebo is a 3D dynamic simulator with the ability to accurately and efficiently 
 
 - convenient programmatic and graphical interfaces
 
-> ## Robot Operating System
+> ### 3. Robot Operating System
 >> **Intro**
 - ROS is an open source framework for robot control
 - ROS serve as a common software platform for people who are building and using robot
