@@ -1,4 +1,4 @@
-<h1 align="center">Week 05 Report</h1>
+<h1 align="center">Week 05, 06 Report</h1>
 
 ## *Intern: Do Thanh Trung*
 
@@ -8,7 +8,7 @@
 - Gazebo, ROS Introduction 
 - Demo
 
-### **1. Overview**  
+### **I. Overview**  
 
 - Simulation allows for the safe testing of experimental code and settings. Crashing virtual vehicles is a lot cheaper than crashing real ones!
 - Simulation is implemented by using a Flight Dynamics Model (FDM) of the vehicle to simulate the physics involved with vehicle movement. It receives inputs from a SITL (Software in the Loop) program running the ArduPilot firmware (which are the firmware’s servo/motor outputs) and outputs vehicle status,position, velocities, etc. that result from those inputs back to the firmware simulation. Just as sensors would in the real world case.
@@ -26,8 +26,8 @@
 *Architecture System of Simulation*
 </div>
 
-### **2. Introduction** 
-> ## [Ardupilot](https://ardupilot.org/)
+### **II. Introduction** 
+> ## 1.[Ardupilot](https://ardupilot.org/)
 - ArduPilot is a trusted, versatile, and open source autopilot system supporting many vehicle types: multi-copters, traditional helicopters, fixed wing aircraft, boats, submarines, rovers and more.
 - The ArduPilot software suite consists of navigation software (typically referred to as firmware when it is compiled to binary form for microcontroller hardware targets) running on the vehicle (either Copter, Plane, Rover, AntennaTracker, or Sub), along with ground station controlling software including Mission Planner, APM Planner, QGroundControl, MavProxy, Tower and others. 
 
