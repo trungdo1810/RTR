@@ -10,15 +10,21 @@
 
 ### **1. Overview**  
 
-- Gazebo simulator is used to create models and simulation environments. Simulation allows for the safe testing of experimental code and settings. Crashing virtual vehicles is a lot cheaper than crashing real ones!
-- 
+- Simulation allows for the safe testing of experimental code and settings. Crashing virtual vehicles is a lot cheaper than crashing real ones!
+- Simulation is implemented by using a Flight Dynamics Model (FDM) of the vehicle to simulate the physics involved with vehicle movement. It receives inputs from a SITL (Software in the Loop) program running the ArduPilot firmware (which are the firmware’s servo/motor outputs) and outputs vehicle status,position, velocities, etc. that result from those inputs back to the firmware simulation. Just as sensors would in the real world case.
+<div align='center'>
+    <img src = "image\overview.jpg">
 
+*Architecture System of Simulation*
+</div>
+
+- Gazebo is a 3D robotics simulator used to create models and simulation environments. 
+-  ROS is an open-source robotics middleware suite. It provides services designed for a heterogeneous computer cluster such as hardware abstraction, low-level device control, implementation of commonly used functionality, message-passing between processes, and package management.
 <div align='center'>
     <img src = "image\Architecture_System_of_Simulation.png">
 
 *Architecture System of Simulation*
 </div>
-
 
 ### **2. Introduction** 
 > ## [Ardupilot](https://ardupilot.org/)
