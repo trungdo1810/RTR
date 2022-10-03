@@ -1,6 +1,7 @@
 <h1 align="center">Week 03 Report</h1>
 
 ## *Intern: Do Thanh Trung*
+**Introduction**
 **1. Sensors in drone**  
 - **Gyroscope**: Gyro sensors, this sensor is used to provide angular motion to the drone. 3-axis gyroscope provides angular velocity in 3 axes.  
 <div align='center'>
