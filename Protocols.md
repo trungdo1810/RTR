@@ -11,6 +11,7 @@
 - [I2C](#I2C)
 - [UART](#UART)
 - [CANBus](#CANBus)
+<detail>
 ## **1. SPI**<a name = "SPI"></a>
 ### **1.1.Lý thuyết chung**  
 - SPI - Serial Peripheral Interface(giao diện ngoại vi nối tiếp) được phát triển bởi hãng Motorola.
@@ -58,6 +59,7 @@ Tín hiệu xung clock trong SPI có thể đồng bộ hóa bằng cách sử d
     - Không có hình thức kiểm tra lỗi như bit chẵn lẻ (Parity bit) như trong UART.
     - Chỉ cho phép một master duy nhất.
 
+</detail>
 
 ## **1. I2C**<a name = "I2C"></a>
 ### **1.1. Lý thuyết chung**  
